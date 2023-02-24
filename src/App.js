@@ -1,4 +1,5 @@
 import './App.css';
+import ArticleList from './components/ArticleList/ArticleList';
 import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
 
@@ -6,6 +7,9 @@ function App() {
 	return (
 		<div className="App">
 			<Header />
+			<hr></hr>
+			<ArticleList headingText={`Today's Top News`} />
+			<hr></hr>
 			<Footer />
 		</div>
 	);
