@@ -1,0 +1,5 @@
+[
+	{ "id": 1, "fields": { "headline": "Headline 1", "thumbnail": "Thumbnail 1" } },
+	{ "id": 2, "fields": { "headline": "Headline 2", "thumbnail": "Thumbnail 2" } },
+	{ "id": 3, "fields": { "headline": "Headline 3", "thumbnail": "Thumbnail 3" } }
+]

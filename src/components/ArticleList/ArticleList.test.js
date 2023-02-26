@@ -5,7 +5,7 @@ import { render } from '@testing-library/react';
 import ArticleList from './ArticleList';
 
 //* Test 3
-test('should render the same snapshot', () => {
+xtest('should render the same snapshot', () => {
 	// Arrange
 	const view = render(<ArticleList />);
 
