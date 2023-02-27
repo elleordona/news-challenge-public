@@ -36,7 +36,9 @@ Tests:
 
 **Test 2** - The Footer renders
 
-**Test 3** - The ArticleList renders
+**Test 3** - when rendering ArticleList, "Articles loading..." should display when data length is 0
+
+**Test 4** - when rendering ArticleList, a list of articles should display when data contains an article object
 
 ---
 
