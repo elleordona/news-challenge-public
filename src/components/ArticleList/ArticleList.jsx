@@ -7,7 +7,12 @@ const ArticleList = (props) => {
 	return (
 		<div>
 			<h2>{props.headingText}</h2>
-			<ul>{articleList}</ul>
+			<ul title="articles">
+				{/* show loading info while data length is zero */}
+				{props.data.length === 0 && <li key="loading">Articles are loading...</li>}
+				{/* show the list of articles is there are any*/}
+				{props.data.length > 0 && articleList}
+			</ul>
 		</div>
 	);
 };

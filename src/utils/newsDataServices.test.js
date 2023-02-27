@@ -1,3 +1,1 @@
-// getting data from the server
-
-// imports
+// testing for newsDataServices
