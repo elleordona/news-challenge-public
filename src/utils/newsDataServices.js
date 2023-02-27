@@ -1,6 +1,7 @@
 // getting data from the server
 
 // imports
+// const axios = require('axios');
 import axios from 'axios';
 
 export const getArticleDataAsync = async () => {

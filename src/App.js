@@ -27,18 +27,18 @@ function App() {
 
 	useEffect(() => {
 		//* timeout to simulate slow network
-		// setTimeout(() => {
-		getArticleData();
-		// }, 3000);
+		setTimeout(() => {
+			getArticleData();
+		}, 3000);
 		// getArticleData();
 	}, []);
 
 	return (
 		<div className="App">
 			<Header />
+			<hr></hr>
 			{/* this will render if there is no data */}
 			{error && Object.keys(error).length > 0 && <h2>No data to display</h2>}
-			<hr></hr>
 			{/* only render if there are no errors with the data */}
 			{(!error || Object.keys(error).length === 0) && <ArticleList data={data} headingText={`Today's Top News`} />}
 			<hr></hr>
