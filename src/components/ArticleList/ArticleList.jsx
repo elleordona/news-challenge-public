@@ -2,7 +2,13 @@
 
 const ArticleList = (props) => {
 	// map each object in array
-	const articleList = props.data.map((article) => <li key={article.id}>{article.fields.headline}</li>);
+	const articleList = props.data.map((article) => (
+		<li key={article.id}>
+			<img src={article.fields.thumbnail} alt="from guardian api" />
+			<br />
+			<h3>{article.fields.headline}</h3>
+		</li>
+	));
 
 	return (
 		<div>

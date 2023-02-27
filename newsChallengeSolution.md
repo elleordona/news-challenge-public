@@ -58,6 +58,10 @@ Initial Thoughts:
 
 1. Get the image from "fields>thumbnail" in the .json file
 
+Tests:
+
+**Test 5** - an image is included in the document
+
 ---
 
 ## Extended Criteria

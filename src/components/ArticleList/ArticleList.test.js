@@ -26,4 +26,14 @@ describe('ArticleList tests', () => {
 			expect(articleList.length).toBe(testData.results.length);
 		});
 	});
+	//* Test 5
+	test('should have an image in the document', () => {
+		// Arrange
+		render(<ArticleList data={testData.results} />);
+		const image = screen.getAllByRole('img');
+		// Act
+		// Assert
+		expect(image.length).toBe(testData.results.length);
+		// the amount of images in the document is the same as the amount of articles
+	});
 });
