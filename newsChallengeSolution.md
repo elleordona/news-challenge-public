@@ -40,6 +40,18 @@ Tests:
 
 **Test 4** - when rendering ArticleList, a list of articles should display when data contains an article object
 
+**Test 6** - getArticleDataAsync makes the external data call
+
+**Test 7** - a successful request returns the right data
+
+**Test 8** - an unsuccessful request returns the error object
+
+**Test 9** - getArticleData makes a call to getArticleDataAsync when useEffect is called
+
+**Test 10** - should render the returned article headline in a list
+
+**Test 11** - should render "no data" message when an error is returned
+
 ---
 
 ### Part 2
