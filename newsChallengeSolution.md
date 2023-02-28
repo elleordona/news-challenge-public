@@ -124,7 +124,7 @@ User Story Breakdown:
 
 Initial Thoughts:
 
-1. Use bootstrap to make application responsive
+1. Use css components to make application responsive
 
 ---
 
