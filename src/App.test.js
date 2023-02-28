@@ -45,5 +45,17 @@ describe('App Component Tests', () => {
 			// Assert
 			expect(noData).toBeInTheDocument();
 		});
+
+		//* Test 12
+		test('should render the returned thumbnail in a list', async () => {
+			// Arrange
+			const expectedReturn = [{ id: 1, fields: { headline: `testHeadline`, thumbnail: `https://media.glassdoor.com/sqll/4202510/digital-futures-squareLogo-1617292955646.png` } }];
+			dataService.getArticleDataAsync.mockImplementation(() => expectedReturn);
+			render(<App />);
+			// Act
+			const testThumbnailItem = await screen.findByRole('img');
+			// Assert
+			expect(testThumbnailItem).toBeInTheDocument();
+		});
 	});
 });
