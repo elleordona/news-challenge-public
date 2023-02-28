@@ -11,7 +11,7 @@ describe('getArticleDataAsync tests', () => {
 	//* Test 6
 	test('should actually make the external call data call', () => {
 		// Arrange
-		const testData = { results: [{ headline: `testHeadline`, thumbnail: `https://media.glassdoor.com/sqll/4202510/digital-futures-squareLogo-1617292955646.png` }] };
+		const testData = [{ id: 1, fields: { headline: `testHeadline`, thumbnail: `https://media.glassdoor.com/sqll/4202510/digital-futures-squareLogo-1617292955646.png` } }];
 		axiosMock.get.mockResolvedValueOnce(testData);
 		// Act
 		getArticleDataAsync();
@@ -22,7 +22,7 @@ describe('getArticleDataAsync tests', () => {
 	//* Test 7
 	test('should have successful request returning the right data', async () => {
 		// Arrange
-		const testData = { results: [{ headline: `testHeadline`, thumbnail: `https://media.glassdoor.com/sqll/4202510/digital-futures-squareLogo-1617292955646.png` }] };
+		const testData = [{ id: 1, fields: { headline: `testHeadline`, thumbnail: `https://media.glassdoor.com/sqll/4202510/digital-futures-squareLogo-1617292955646.png` } }];
 		axiosMock.get.mockResolvedValueOnce(testData);
 		// Act
 		const result = await getArticleDataAsync();

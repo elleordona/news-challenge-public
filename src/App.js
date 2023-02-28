@@ -26,11 +26,11 @@ function App() {
 	};
 
 	useEffect(() => {
-		//* timeout to simulate slow network
-		setTimeout(() => {
-			getArticleData();
-		}, 3000);
-		// getArticleData();
+		// timeout to simulate slow network
+		// setTimeout(() => {
+		// 	getArticleData();
+		// }, 3000);
+		getArticleData();
 	}, []);
 
 	return (
