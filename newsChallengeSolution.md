@@ -74,6 +74,8 @@ Tests:
 
 **Test 5** - an image is included in the document
 
+**Test 12** - should render the returned article thumbnail in a list
+
 ---
 
 ## Extended Criteria
