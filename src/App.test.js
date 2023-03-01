@@ -2,7 +2,6 @@
 
 // imports
 import { render, screen, waitFor } from '@testing-library/react';
-import userEvent from '@testing-library/user-event';
 import App from './App';
 import * as dataService from './utils/newsDataServices';
 
