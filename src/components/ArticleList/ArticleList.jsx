@@ -6,7 +6,7 @@ const ArticleList = (props) => {
 		<li key={article.id} className="card text-center w-75 mx-auto">
 			<img src={article.fields.thumbnail} alt="from guardian api" className="card-img-top rounded mx-auto" />
 			<br />
-			<p className="h4 card-title">{article.fields.headline}</p>
+			<p className="h5 card-title">{article.fields.headline}</p>
 		</li>
 	));
 
