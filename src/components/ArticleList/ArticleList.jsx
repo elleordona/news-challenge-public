@@ -3,16 +3,16 @@
 const ArticleList = (props) => {
 	// map each object in array
 	const articleList = props.data.map((article) => (
-		<li key={article.id}>
-			<img src={article.fields.thumbnail} alt="from guardian api" />
+		<li key={article.id} className="card text-center w-75 mx-auto">
+			<img src={article.fields.thumbnail} alt="from guardian api" className="card-img-top rounded mx-auto" />
 			<br />
-			<h3>{article.fields.headline}</h3>
+			<p className="h4 card-title">{article.fields.headline}</p>
 		</li>
 	));
 
 	return (
 		<div>
-			<h2>{props.headingText}</h2>
+			<h2 className="display-5">{props.headingText}</h2>
 			<ul title="articles">
 				{/* show loading info while data length is zero */}
 				{props.data.length === 0 && <li key="loading">Articles are loading...</li>}

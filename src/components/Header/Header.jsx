@@ -2,7 +2,7 @@
 const Header = () => {
 	return (
 		<header>
-			<h1>Digital Futures News Challenge</h1>
+			<h1 className="display-2">Digital Futures News Challenge</h1>
 		</header>
 	);
 };
