@@ -1,13 +1,13 @@
 // Testing for Header Component
-import { render } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 
 import Header from './Header';
 
 //* Test 1
-test('should render the same snapshot', () => {
+test('should render the header title', () => {
 	// Arrange
-	const view = render(<Header />);
+	render(<Header />);
 	// Act
 	// Assert
-	expect(view).toMatchSnapshot();
+	expect(screen.getByText(/news challenge/i)).toBeInTheDocument();
 });
